@@ -9,6 +9,7 @@ packages = [{include = "flask_course_web_aplication"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^2.2.2"
+flask-sqlalchemy = "^3.0.2"
 
 
 [build-system]
