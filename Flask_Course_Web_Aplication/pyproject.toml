@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "flask-course-web-aplication"
+name = "flask-course-web-application"
 version = "0.1.0"
 description = ""
 authors = ["Lyarkh <lcemanuel.emanuel@gmail.com>"]
