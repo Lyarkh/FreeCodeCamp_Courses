@@ -5,30 +5,41 @@
 {% endblock %}
 
 {% block content %}
-    <table class="table table-hover table-dark">
-        <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Barcode</th>
-                <th scope="col">Price</th>
-                <th scope="col">Options</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in items %}
-            <tr>
-                <td>{{ item.id }}</td>
-                <td>{{ item.name }}</td>
-                <td>{{ item.barcode }}</td>
-                <td>{{ item.price }}$</td>
-                <td>
-                    <button class="btn btn-outline btn-info">More Info</button>
-                    <button class="btn btn-outline btn-success">Purchase this item</button>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-
-    </table>
+    <div class="row" style="margin-top:20px; margin-left: 20px">
+        <div class="col-8">
+            <h2>Available Items on the Market</h2>
+            <p>Click on one of the items to start buying</p>
+            <br>
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Barcode</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.barcode }}</td>
+                        <td>{{ item.price }}$</td>
+                        <td>
+                            <button class="btn btn-outline btn-info">More Info</button>
+                            <button class="btn btn-outline btn-success">Purchase this item</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-4">
+            <h2>Owned Items</h2>
+            <p>Click on sell item to put an item back on the Market</p>
+            <br>
+        </div>
+    </div>
 {% endblock %}
