@@ -31,7 +31,7 @@
                         <td>{{ item.price }}$</td>
                         <td>
                             <button class="btn btn-outline btn-info" data-toggle="modal" data-target="#Modal-MoreInfo-{{ item.id }}">More Info</button>
-                            <button class="btn btn-outline btn-success">Purchase this item</button>
+                            <button class="btn btn-outline btn-success" data-toggle="modal" data-target="#Modal-PurchaseConfirm-{{ item.id }}">Purchase this item</button>
                         </td>
                     </tr>
                     {% endfor %}
