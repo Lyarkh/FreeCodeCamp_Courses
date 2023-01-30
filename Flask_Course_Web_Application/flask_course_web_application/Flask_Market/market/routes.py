@@ -10,7 +10,7 @@ from flask_login import login_user, logout_user, login_required, current_user
 def home_page():
 	return render_template('home.html')
 
-@app.route('/market', method=['GET', 'POST'])
+@app.route('/market', methods=['GET', 'POST'])
 @login_required
 def market_page():
 	purchase_form = PurchaseItemForm()
