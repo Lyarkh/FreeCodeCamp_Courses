@@ -1,6 +1,6 @@
 from market import app, db
 from market.models import Item, User
-from flask import render_template, redirect, url_for, flash
+from flask import render_template, redirect, url_for, flash, request
 from market.forms import RegisterForm, LoginForm, PurchaseItemForm
 from flask_login import login_user, logout_user, login_required
 
@@ -10,10 +10,12 @@ from flask_login import login_user, logout_user, login_required
 def home_page():
 	return render_template('home.html')
 
-@app.route('/market')
+@app.route('/market', method=['GET', 'POST'])
 @login_required
 def market_page():
 	purchase_form = PurchaseItemForm()
+	if purchase_form.validate_on_submit():
+		print(request.form.get('purchased_item'))
 	items = Item.query.all()
 	return render_template('market.html', items=items, purchase_form=purchase_form)
 
