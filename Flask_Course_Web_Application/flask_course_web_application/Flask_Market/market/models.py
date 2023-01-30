@@ -34,6 +34,9 @@ class User(db.Model, UserMixin):   # type: ignore
     def check_password_correction(self, attempted_password):
         return bcrypt.check_password_hash(self.password_hash, attempted_password)
 
+    def can_purchase(self, item_obj):
+        return self.budget == item_obj
+
 
 class Item(db.Model):   # type: ignore
     __tablename__ = 'item'
