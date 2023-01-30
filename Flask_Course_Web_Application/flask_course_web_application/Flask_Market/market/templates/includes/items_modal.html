@@ -55,7 +55,9 @@
                         By clicking Purchase, you will purchase this item.
                     </h6>
                     <br>
+                    <input type="hidden" name="purchased_item" value="{{ item.name }}" id="purchased_item">
                     {{ purchase_form.submit(class="btn btn-outline-success btn-block") }}
+
                 </form>
             </div>
             <div class="modal-footer">
