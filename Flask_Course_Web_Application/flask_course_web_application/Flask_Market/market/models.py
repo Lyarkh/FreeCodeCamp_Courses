@@ -42,6 +42,9 @@ class User(db.Model, UserMixin):   # type: ignore
     def can_purchase(self, item_obj):
         return self.budget == item_obj
 
+    def can_sell(self, item_obj):
+        return item_obj in self.items
+
 
 class Item(db.Model):   # type: ignore
     __tablename__ = 'item'
