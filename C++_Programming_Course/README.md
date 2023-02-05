@@ -61,3 +61,67 @@
   - Switch
   - Ternary Operators
   - Flow Control Summary
+
+- Chapter 6: Loops
+  - Loops Introduction
+  - For Loop
+  - While Loop
+  - Do While Loop
+
+- Chapter 7: Arrays
+  - Introduction to Arrays
+  - Declaring and using arrays
+  - Size of an array
+  - Arrays of characters
+  - Array Bounds
+
+- Chapter 8: Pointers
+  - Introduction to Pointers
+  - Declaring and using pointers
+  - Pointer to char
+  - Program Memory Map Revisited
+  - Dynamic Memory Allocation
+  - Dangling Pointers
+  - When new Fails
+  - Null Pointer Safety
+  - Memory Leaks
+  - Dynamically allocated arrays
+
+- Chapter 9: References
+  - Introduction to References
+  - Declaring and using references
+  - Comparing pointers and references
+  - References and const
+
+- Chapter 10: Character Manipulation and Strings
+  - Introduction to Strings
+  - Character Manipulation
+  - C-string manipulation
+  - C-String concatenation and copy
+  - Introducing std::string
+  - Declaring and using std::string
+
+- Chapter 11: Functions
+  - The One Definition Rule
+  - First Hand on C++ Functions
+  - Function Declaration and Function Definitions
+  - Multiple Files - Compilation Model Revisited
+  - Pass by value
+  - Pass by pointer
+  - Pass by reference
+
+- Chapter 12: Getting Things out of functions
+  - Introduction to getting things out of functions
+  - Input and output parameters
+  - Returning from functions by value
+
+- Chapter 13: Function Overloading
+  - Function Overloading Introduction
+  - Overloading with different parameters
+
+- Chapter 14: Lambda functions
+  - Intro to Lambda Functions
+  - Declaring and using lambda functions
+  - Capture lists
+  - Capture all in context
+  - Summary
