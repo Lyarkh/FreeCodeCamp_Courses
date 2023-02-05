@@ -125,3 +125,63 @@
   - Capture lists
   - Capture all in context
   - Summary
+
+- Chapter 15: Function Templates
+  - Intro to function templates
+  - Trying out function templates
+  - Template type deduction and explicit arguments
+  - Template parameters by reference
+  - Template specialization
+
+- Chapter 16: C++20 Concepts Crash course
+  - Intro to C++20 Concepts
+  - Using C++20 Concepts
+  - Building your own C++20 Concepts
+  - Zooming in on the requires clause
+  - Combining C++20 Concepts
+  - C++20 Concepts and auto
+
+- Chapter 17: Classes
+  - Intro to classes
+  - Your First Class
+  - C++ Constructors
+  - Defaulted constructors
+  - Setters and Getters
+  - Class Across Multiple Files
+  - Arrow pointer call notation
+  - Destructors
+  - Order of Constructor Destructor Calls
+  - The this Pointer
+  - struct
+  - Size of objects
+
+- Chapter 18: Inheritance
+  - Introduction to Inheritance
+  - First try on Inheritance
+  - Protected members
+  - Base class access specifiers : Zooming in
+  - Closing in on Private Inheritance
+  - Resurrecting Members Back in Context
+  - Default Constructors with Inheritance
+  - Custom Constructors With Inheritance
+  - Copy Constructors with Inheritance
+  - Inheriting Base Constructors
+  - Inheritance and Destructors
+  - Reused Symbols in Inheritance
+
+- Chapter 19: Polymorphism
+  - Introduction to Polymorphism
+  - Static Binding with Inheritance
+  - Dynamic binding with virtual functions
+  - Size of polymorphic objects and slicing
+  - Polymorphic objects stored in collections - rride
+  - Overloading, overriding and function hiding
+  - Inheritance and Polymorphism at different levels
+  - Inheritance and polymorphism with static members
+  - Final
+  - Virtual functions with default arguments
+  - Virtual Destructors
+  - Dynamic casts
+  - Polymorphic Functions and Destructors
+  - Pure virtual functions and abstract classes
+  - Abstract Classes as Interfaces
