@@ -12,5 +12,7 @@ Repositório contendo cursos e projetos do freecodecamp.
       - integração com banco de dados
       - html e css
       - ORM
-
+  
+  - [C++_Programming_Course](./C++_Programming_Course)
+  
 :construction: Em construção :construction:
