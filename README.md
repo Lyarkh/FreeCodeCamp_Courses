@@ -14,5 +14,6 @@ Repositório contendo cursos e projetos do freecodecamp.
       - ORM
   
   - [C++_Programming_Course](./C++_Programming_Course)
-  
+    - **skills desenvolvidas:**
+      - ...
 :construction: Em construção :construction:
