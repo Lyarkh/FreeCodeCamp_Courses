@@ -10,10 +10,10 @@ func declaring() {
 	var l string = "foo"
 
 	// inferencia de variável
-	var a := 42
-	var b := 10.
-	var c := 20.
-	var d := "foo"
+	a := 42
+	b := 10.
+	c := 20.
+	d := "foo"
 
 	fmt.Printf("%v, %T", i, i)
 	fmt.Printf("%v, %T", j, j)
