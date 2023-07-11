@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "scrapy-course-python-web-scraping"
+version = "0.1.0"
+description = ""
+authors = ["Lyarkh <lcemanuel.emanuel@gmail.com>"]
+readme = "README.md"
+packages = [{include = "scrapy_course_python_web_scraping"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
