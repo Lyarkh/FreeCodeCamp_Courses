@@ -16,7 +16,7 @@ class BookspiderSpider(scrapy.Spider):
                 'url': book.css('h3 a').attrib['href']
             }
 
-        next_page = response.css('li.next a :: attr(href)').get()
+        next_page = response.css('li.next a ::attr(href)').get()
 
         if next_page is not None:
             if 'catalogue/' in next_page:
