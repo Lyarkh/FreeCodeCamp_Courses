@@ -39,7 +39,7 @@ class BookspiderSpider(scrapy.Spider):
             'tax': table_rows[4].css('td ::text').get(),
             'availability': table_rows[5].css('td ::text').get(),
             'num_reviews': table_rows[6].css('td ::text').get(),
-            'stars': response.css('p.star-rating').attr['class'],
+            'stars': response.css('p.star-rating').attrib['class'],
             'category': response.xpath("//ul[@class='breadcrumb']/li[@class='active']/preceding-sibling::li[1]/a/text()").get(),
             'description' : response.xpath("//div[@id='product_description']/following-sibling::p/text()").get(),
             'price': response.css('p.price_color ::text').get(),
