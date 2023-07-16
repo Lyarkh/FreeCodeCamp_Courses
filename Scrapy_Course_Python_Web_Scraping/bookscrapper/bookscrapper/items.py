@@ -12,6 +12,10 @@ class BookscrapperItem(scrapy.Item):
     pass
 
 
+def serialize_price(value):
+    return f'£ {str(value)}'
+
+
 class BookItem(scrapy.Item):
     url = scrapy.Field()
     title = scrapy.Field()
