@@ -18,6 +18,10 @@ class BookscrapperPipeline:
                 value = adapter.get(field_name)
                 adapter[field_name] = value.strip()
 
+        lowercase_keys = ['çategory', 'product_type']
+        for lowercase_key in lowercase_keys:
+            value = adapter.get(lowercase_key)
+            adapter[lowercase_key] = value.lower()
 
-                
+
         return item
