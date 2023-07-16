@@ -1,4 +1,5 @@
 import scrapy
+from bookscrapper.items import BookItem
 
 
 class BookspiderSpider(scrapy.Spider):
@@ -41,6 +42,6 @@ class BookspiderSpider(scrapy.Spider):
             'num_reviews': table_rows[6].css('td ::text').get(),
             'stars': response.css('p.star-rating').attrib['class'],
             'category': response.xpath("//ul[@class='breadcrumb']/li[@class='active']/preceding-sibling::li[1]/a/text()").get(),
-            'description' : response.xpath("//div[@id='product_description']/following-sibling::p/text()").get(),
+            'description': response.xpath("//div[@id='product_description']/following-sibling::p/text()").get(),
             'price': response.css('p.price_color ::text').get(),
         }
