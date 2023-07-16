@@ -37,5 +37,8 @@ class BookscrapperPipeline:
         else:
             availability_array = split_string_array[1].split(' ')
             adapter['availability'] = int(availability_array[0])
-            
+
+        num_reviews_string = adapter.get('num_reviews')
+        adapter['num_reviews'] = int(num_reviews_string)
+
         return item
