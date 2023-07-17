@@ -41,4 +41,21 @@ class BookscrapperPipeline:
         num_reviews_string = adapter.get('num_reviews')
         adapter['num_reviews'] = int(num_reviews_string)
 
+        stars_string = adapter.get('stars')
+        split_stars_array = stars_string.split(' ')
+        stars_text_value = split_stars_array[1].lower()
+
+        if stars_text_value == 'zero':
+            adapter['stars'] = 0
+        if stars_text_value == 'one':
+            adapter['stars'] = 1
+        if stars_text_value == 'two':
+            adapter['stars'] = 2
+        if stars_text_value == 'three':
+            adapter['stars'] = 3
+        if stars_text_value == 'four':
+            adapter['stars'] = 4
+        if stars_text_value == 'five':
+            adapter['stars'] = 5
+
         return item
