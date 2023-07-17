@@ -16,12 +16,12 @@ class BookscrapperPipeline:
         for field_name in field_names:
             if field_name != 'descriptions':
                 value = adapter.get(field_name)
-                adapter[field_name] = value.strip()
+                adapter[field_name] = value[0].strip()
 
         lowercase_keys = ['çategory', 'product_type']
         for lowercase_key in lowercase_keys:
             value = adapter.get(lowercase_key)
-            adapter[lowercase_key] = value.lower()
+            adapter[lowercase_key] = value[0].lower()
 
         price_keys = ['price', 'price_excl_tax', 'price_incl_tax', 'tax']
         for price_key in price_keys:
