@@ -18,19 +18,19 @@ class BookscrapperPipeline:
                 value = adapter.get(field_name)
                 adapter[field_name] = value[0].strip()
 
-        lowercase_keys = ['çategory', 'product_type']
+        lowercase_keys = ['category', 'product_type']
         for lowercase_key in lowercase_keys:
             value = adapter.get(lowercase_key)
-            adapter[lowercase_key] = value[0].lower()
+            adapter[lowercase_key] = value.lower()
 
         price_keys = ['price', 'price_excl_tax', 'price_incl_tax', 'tax']
         for price_key in price_keys:
             value = adapter.get(price_key)
             value = value.replace('£', '')
-            adapter[price_key] = float(value)
+            adapter[price_key] = float(value) if value else 0.
 
         availability_string = adapter.get('availability')
-        split_string_array = availability_string.split.split('(')
+        split_string_array = availability_string.split('(')
 
         if len(split_string_array) < 2:
             adapter['availability'] = 0
