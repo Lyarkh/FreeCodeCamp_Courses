@@ -9,7 +9,7 @@ class BookspiderSpider(scrapy.Spider):
 
     custom_settings ={
         'FEEDS': {
-            'booksdata.json': {'format': 'json'}
+            'booksdata.json': {'format': 'json', 'overwrite': True},
         }
     }
 
