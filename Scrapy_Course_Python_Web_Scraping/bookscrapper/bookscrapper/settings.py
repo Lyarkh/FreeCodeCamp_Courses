@@ -13,7 +13,7 @@ SPIDER_MODULES = ["bookscrapper.spiders"]
 NEWSPIDER_MODULE = "bookscrapper.spiders"
 
 FEEDS = {
-    'data.json': {'format': 'json'}
+    'booksdata.json': {'format': 'json'}
 }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
