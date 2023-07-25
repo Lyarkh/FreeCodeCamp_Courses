@@ -113,6 +113,7 @@ class ScrapeOpsFakeUserAgentMiddleware:
     def from_crawler(cls, crawler):
         return cls(crawler.settings)
 
+
     def __init__(self, settings):
         self.scrapeops_api_key = settings.get('SCRAPEOPS_API_KEY')
         self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT', 'http://headers.scrapeops.io/v1/user-agents?')
@@ -122,3 +123,11 @@ class ScrapeOpsFakeUserAgentMiddleware:
         self._get_user_agents_list()
         self._scrapeops_fake_user_agents_enabled()
 
+
+    def _get_user_agents_list(self):
+        payload = {'api_key': self.scrapeops_api_key}
+        if self.scrapeops_num_results is not None:
+            payload['num_results'] = self.scrapeops_num_results
+        response = requests.get(self.scrapeops_endpoint, params=urlencode(payload))
+        json_response = response.json()
+        self.user_agents_list = json_response.get('result', [])
