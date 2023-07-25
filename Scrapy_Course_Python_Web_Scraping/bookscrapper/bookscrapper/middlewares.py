@@ -101,3 +101,12 @@ class BookscrapperDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
+
+
+from urllib.parse import urlencode
+from random import randint
+import requests
+
+
+class ScrapeOpsFakeUserAgentMiddleware:
+    ...
