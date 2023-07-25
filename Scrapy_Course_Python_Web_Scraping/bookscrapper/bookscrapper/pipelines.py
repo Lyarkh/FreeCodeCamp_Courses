@@ -99,3 +99,54 @@ class SaveToMySQLPipeline:
                 PRIMARY KEY (id)
             )
             """)
+
+    def process_item(self, item, spider):
+
+        ## Define insert statement
+        self.cur.execute(""" insert into books (
+            url,
+            title,
+            upc,
+            product_type,
+            price_excl_tax,
+            price_incl_tax,
+            tax,
+            price,
+            availability,
+            num_reviews,
+            stars,
+            category,
+            description
+            ) values (
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s,
+                %s
+                )""", (
+            item["url"],
+            item["title"],
+            item["upc"],
+            item["product_type"],
+            item["price_excl_tax"],
+            item["price_incl_tax"],
+            item["tax"],
+            item["price"],
+            item["availability"],
+            item["num_reviews"],
+            item["stars"],
+            item["category"],
+            str(item["description"][0])
+        ))
+
+        # ## Execute insert of data into database
+        self.conn.commit()
+        return item
