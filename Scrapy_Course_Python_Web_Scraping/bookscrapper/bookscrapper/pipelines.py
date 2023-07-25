@@ -150,3 +150,7 @@ class SaveToMySQLPipeline:
         # ## Execute insert of data into database
         self.conn.commit()
         return item
+
+    def close_spider(self, spider):
+        self.cur.close()
+        self.conn.close()
