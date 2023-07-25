@@ -64,3 +64,18 @@ class BookscrapperPipeline:
             adapter['stars'] = 5
 
         return item
+
+
+import mysql.connector
+
+class SaveToMySQLPipeline:
+
+    def __init__(self):
+        self.con = mysql.connector.connect(
+            host='localhost',
+            user='root',
+            password='',
+            database='books'
+        )
+
+        self.cur = self.conn.cursor()
