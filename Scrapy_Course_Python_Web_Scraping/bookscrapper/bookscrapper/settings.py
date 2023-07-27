@@ -67,6 +67,8 @@ ROBOTSTXT_OBEY = False
 DOWNLOADER_MIDDLEWARES = {
     # "bookscrapper.middlewares.BookscrapperDownloaderMiddleware": 543,
     "bookscrapper.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware": 400,
+    "rotating_proxies.moddlewares.RotatingProxiesMiddleware": 610,
+    "rotating_proxies.moddlewares.BanDetectionMiddleware": 620,
 }
 
 # Enable or disable extensions
