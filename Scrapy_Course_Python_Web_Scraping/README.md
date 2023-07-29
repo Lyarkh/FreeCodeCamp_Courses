@@ -1,6 +1,8 @@
 # Scrapy Course Python Web Scraping
 
 ---
+![PyPI](https://img.shields.io/pypi/v/scrapy)
+
 
 ## Descrição
 
