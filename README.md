@@ -1,5 +1,7 @@
 # FreeCodeCamp_Courses
 ---
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Lyarkh/FreeCodeCamp_Courses)
+
 
 Repositório contendo cursos e projetos do freecodecamp.
 
