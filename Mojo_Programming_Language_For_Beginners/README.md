@@ -1,6 +1,8 @@
 # Mojo Programming Language
 
 ---
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Lyarkh/FreeCodeCamp_Courses)
+![GitHub](https://img.shields.io/github/license/Lyarkh/FreeCodeCamp_Courses)
 
 ## Contents summary
 
