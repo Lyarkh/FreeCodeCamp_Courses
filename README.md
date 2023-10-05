@@ -2,7 +2,8 @@
 ---
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Lyarkh/FreeCodeCamp_Courses)
 ![GitHub](https://img.shields.io/github/license/Lyarkh/FreeCodeCamp_Courses)
-
+<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Lyarkh/FreeCodeCamp_Courses" />
+<img alt="" src="https://img.shields.io/github/repo-size/Lyarkh/FreeCodeCamp_Courses" />
 
 
 Repositório contendo cursos e projetos do freecodecamp.
