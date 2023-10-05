@@ -4,6 +4,8 @@
 ![GitHub](https://img.shields.io/github/license/Lyarkh/FreeCodeCamp_Courses)
 <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Lyarkh/FreeCodeCamp_Courses" />
 <img alt="" src="https://img.shields.io/github/repo-size/Lyarkh/FreeCodeCamp_Courses" />
+<img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Lyarkh/FreeCodeCamp_Courses" />
+<img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Lyarkh/FreeCodeCamp_Courses" />
 
 
 Repositório contendo cursos e projetos do freecodecamp.
